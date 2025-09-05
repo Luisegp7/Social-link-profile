@@ -1,0 +1,124 @@
+/*CSS variables*/
+
+:root {
+    --Green :hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+}
+
+/*General set up*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family:'Inter', Arial, Helvetica, sans-serif ;
+    background-color: var(--Grey900);
+    padding: 0 1rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    text-align: center;
+}
+
+/*Classes styles*/
+.main-container {
+
+    max-width: 320px;
+    width: 100%;
+    background-color: var(--Grey800);
+    border-radius: 10px;
+    height: 62vh;
+    padding: 1.25rem;
+    
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    padding-block: 0 20px;
+}
+
+.name{
+    font-size: 1.2rem ;
+}
+
+.direction{
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-block: 5px 0;
+    color: var(--Green);
+}
+
+.description{
+    font-size: 13px;
+    margin-block: 27px 0;
+}
+
+.social-links{
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding-block: 3px 0;
+}
+
+
+/*Elements styles*/
+img{
+    width: 75px;
+    border-radius: 100px;
+    margin-block: 5px 0;
+    
+}
+
+.social-links a{
+    background-color: var(--Grey700);
+    width: 270px;
+    height: 13%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    
+}
+
+.social-links a:hover{
+    color: black;
+    font-weight: 600;
+    background-color: var(--Green);
+    cursor: pointer black;
+
+}
+
+a {
+    color: var(--White);
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+}
+
+/* Desktop styles*/
+@media screen and (min-width: 768px) {
+
+    .main-container {
+        max-width: 374px; 
+        height: 57vh;   
+        padding: 2rem;
+
+    }
+    
+    img{
+        margin: 0;
+    };
+  
+}
