@@ -111,8 +111,8 @@ a {
 @media screen and (min-width: 768px) {
 
     .main-container {
-        max-width: 374px; 
-        height: 563px;
+        max-width: 384px; 
+        height: 580px;
         padding: 2rem;
     }
     
