@@ -119,17 +119,14 @@ a {
     img{
         width: 90px;
         margin: 0;
-    };
+    }
 
     .name{
-    font-size: 1.44rem ;
+        font-size: 1.44rem;
     }
 
     .direction{
         font-size: 0.84rem;
-        font-weight: bold;
-        margin-block: 5px 0;
-        color: var(--Green);
     }
 
     .description{
